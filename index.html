@@ -8,59 +8,85 @@
 </head>
 <body>
     <header>
-        <img src="./images/av.png" />
-        <div>
-            <h1>Дарья Татарова</h1>
-            <p>Начинающий дизайнер и frontend-разработчик</p>
+        <div class="menu">
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Профессиональные навыки</a>
+            <a href="#cases">Примеры работ</a>
+        </div>
+        <div class="to-form">
+            <a href="#contact">Связаться</a>
         </div>
     </header>
 
     <main>
         <section id="about">
-            <h2>Обо мне</h2>
-            <br>Мне 19 лет, и я активно развиваюсь в сфере информационных технологий и дизайна. Глубокая увлеченность визуальными коммуникациями</br>и веб-технологиями подталкивает меня к постоянному изучению нового и совершенствованию своих навыков.</p>
+            <img src="./images/av.png" />
+            <div class="intro-info">
+                <div class="slim-column-container">
+                    <h1>Дарья Татарова</h1>
+                    <p>Начинающий дизайнер и frontend-разработчик</p>
+                </div>
+                <div class="slim-column-container">
+                    <h2>Обо мне</h2>
+                    <p>Мне 19 лет, и я активно развиваюсь в сфере информационных технологий<br>и дизайна. Увлеченность визуальными коммуникациями и веб-технологиями подталкивает меня к постоянному изучению нового и совершенствованию своих навыков.</p>
+                </div>
+            </div>
         </section>
-
         <section id="education">
             <h2>Образование</h2>
-            <div>
+            <div class="slim-column-container">
                 <h3>РГУ им. А.Н. Косыгина</h3>
                 <p>Студентка 2 курса, направление "Информационные технологии и дизайн"</p>
             </div>
-            <div>
+            <div class="slim-column-container">
                 <h3>Онлайн-курсы КОД</h3>
-                <p>Прохождение программ по Frontend-разработке и UX/UI дизайну</p>
+                <p>Студентка 3 курса, прохождение программ по Frontend-разработке и UX/UI дизайну</p>
             </div>
         </section>
 
         <section id="skills">
             <h2>Профессиональные навыки</h2>
-            <h3>Дизайн:</h3>
-                <ul>
-                    <li>Создание дизайна печатной продукции в Figma и Adobe Illustrator</li>
-                    <li>Разработка дизайна сайтов и мобильных приложений в Figma</li>
-                    <li>Создание анимированных интерактивных прототипов</li>
-                </ul>
+            <div class="slim-column-container">
+                <h3>Дизайн:</h3>
+                <div>
+                    <p>Создание дизайна печатной продукции в Figma и Adobe Illustrator</p>
+                    <p>Разработка дизайна сайтов и мобильных приложений в Figma</p>
+                    <p>Создание анимированных интерактивных прототипов</p>
+                </div>
+            </div>
+                    
+            <div class="slim-column-container">
+                <h3>Вёрстка и разработка:</h3>
+                <div>
+                    <p>Создание сайтов с использованием конструкторов (Tilda, Flexbe)</p>
+                    <p>Базовая вёрстка сайтов с помощью HTML и CSS</p>
+                </div>
+            </div>
 
-            <h3>Вёрстка и разработка:</h3>
-                <ul>
-                    <li>Профессиональная вёрстка сайтов с использованием конструкторов (Tilda, Flexbe)</li>
-                    <li>Базовая вёрстка сайтов с помощью HTML и CSS</li>
-                </ul>
         </section>
+        <section id="cases">
+            <h2>Примеры работ</h2>
+            <div class="gallery">
+                <img class="gallery-item"  src="./images/LT.png"/>
+                <img class="gallery-item"  src="./images/bank.png"/>
+                <img class="gallery-item"  src="./images/BM.png"/>
+                <img class="gallery-item"  src="./images/reC.png"/>  
+            </div>
+        </section>
+        
     </main>
 
     <section id="contact">
-        <h2>Свяжитесь со мной</h2>
         <form>
+            <h2>Вам нужна помощь с дизайном или вёрсткой сайта?</h2>
             <div>
                 <label for="fullname">ФИО:</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <input type="text" id="fullname" name="fullname" placeholder="Иван Иванов" required>
             </div>
             
             <div>
                 <label for="phone">Номер телефона:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone"  placeholder="89279089004" required>
             </div>
             
             <div>
@@ -76,6 +102,7 @@
             <button type="submit">Отправить заявку</button>
         </form>
     </section>
+
 
     <footer>
         <p>© 2024 Татарова Дарья</p>
