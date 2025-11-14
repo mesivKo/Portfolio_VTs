@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Татарова Дарья</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body>
+    <header>
+        <img src="./images/av.png" />
+        <div>
+            <h1>Дарья Татарова</h1>
+            <p>Начинающий дизайнер и frontend-разработчик</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <br>Мне 19 лет, и я активно развиваюсь в сфере информационных технологий и дизайна. Глубокая увлеченность визуальными коммуникациями</br>и веб-технологиями подталкивает меня к постоянному изучению нового и совершенствованию своих навыков.</p>
+        </section>
+
+        <section id="education">
+            <h2>Образование</h2>
+            <div>
+                <h3>РГУ им. А.Н. Косыгина</h3>
+                <p>Студентка 2 курса, направление "Информационные технологии и дизайн"</p>
+            </div>
+            <div>
+                <h3>Онлайн-курсы КОД</h3>
+                <p>Прохождение программ по Frontend-разработке и UX/UI дизайну</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Профессиональные навыки</h2>
+            <h3>Дизайн:</h3>
+                <ul>
+                    <li>Создание дизайна печатной продукции в Figma и Adobe Illustrator</li>
+                    <li>Разработка дизайна сайтов и мобильных приложений в Figma</li>
+                    <li>Создание анимированных интерактивных прототипов</li>
+                </ul>
+
+            <h3>Вёрстка и разработка:</h3>
+                <ul>
+                    <li>Профессиональная вёрстка сайтов с использованием конструкторов (Tilda, Flexbe)</li>
+                    <li>Базовая вёрстка сайтов с помощью HTML и CSS</li>
+                </ul>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Свяжитесь со мной</h2>
+        <form>
+            <div>
+                <label for="fullname">ФИО:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            
+            <div>
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div>
+                <label for="telegram">Ссылка на Telegram:</label>
+                <input type="url" id="telegram" name="telegram" placeholder="https://t.me/yourusername">
+            </div>
+            
+            <div>
+                <label for="service">Описание услуги:</label>
+                <textarea id="service" name="service" rows="4" placeholder="Кратко опишите, какая услуга вам нужна..." required></textarea>
+            </div>
+            
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Татарова Дарья</p>
+    </footer>
+</body>
+</html>
